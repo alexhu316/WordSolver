@@ -7,4 +7,6 @@ Solvers for word games:
   - Isowords
   - Snatch
   - PlaySnatch.io
+  - TwentyLetters.com
 
+And tools to solve a variety of word searching problems.
