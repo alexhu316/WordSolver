@@ -5,7 +5,7 @@ import java.io.*;
 
 public class TwentyLettersSolver {
 
-	static int minLetters = 2;
+	static int minLetters = 3;
 	static int topScore = 0;
 	static int[] letterPoints = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 
 			1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
@@ -232,15 +232,16 @@ public class TwentyLettersSolver {
 				words.add(alphabetize(curr.toLowerCase()));
 			}
 		}
-        inFile = new BufferedReader(new FileReader("Dictionaries/bigdict.txt"));
+		inFile.close();
+        inFile = new BufferedReader(new FileReader("Dictionaries/dict.txt"));
         while ((curr=inFile.readLine())!=null) {
 			if (curr.length()>=minLetters) {
-                words.add(alphabetize(curr.toLowerCase());
+                words.add(alphabetize(curr.toLowerCase()));
                 if (Collections.binarySearch(realWords, curr.toLowerCase()) >= 0) {
-                    newList.add(Collections.binarySearch(realWords, curr.toLowerCase()), curr.toLowerCase());
+                	realWords.add(Collections.binarySearch(realWords, curr.toLowerCase()), curr.toLowerCase());
                 }
                 else {
-                    newList.add(-1-Collections.binarySearch(realWords, curr.toLowerCase()), curr.toLowerCase());
+                	realWords.add(-1-Collections.binarySearch(realWords, curr.toLowerCase()), curr.toLowerCase());
                 }
 			}
 		}
