@@ -148,7 +148,7 @@ public class FullAnagrams {
 			}
 		}
 		
-		makeAnas(solutions, new ArrayList<String>(), words, letters);
+		makeAnas(solutions, new ArrayList<String>(), wordBank, letters);
 		
 		ArrayList<String> sortedSolutions = new ArrayList<String>();
 		for (ArrayList solved : solutions) {
