@@ -5,7 +5,6 @@ Solvers for word games:
   - Boggle
   - Word Bites
   - Isowords
-  - Snatch
   - PlaySnatch.io
   - TwentyLetters.com
 
